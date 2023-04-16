@@ -1,0 +1,3 @@
+{
+"concert_id" : "{{user_saved_table.triggeredRow.concert_id}}""
+}
