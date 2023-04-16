@@ -431,7 +431,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "BackToProfile_button",
-              "onClick": "{{navigateTo('User_home', {}, 'SAME_WINDOW')}}",
+              "onClick": "{{navigateTo('UserHome', {}, 'SAME_WINDOW')}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
