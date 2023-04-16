@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 600,
+          "bottomRow": 990,
           "containerStyle": "none",
           "snapRows": 67,
           "parentRowSpace": 1,
@@ -29,8 +29,13 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "FindConcert_button",
-              "onClick": "{{navigateTo('SearchForConcerts', {}, 'SAME_WINDOW')}}",
+              "onClick": "{{navigateTo('SearchForConcerts', {'user_id': User_id.text}, 'SAME_WINDOW')}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -248,8 +253,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 22,
-              "bottomRow": 26,
+              "topRow": 23,
+              "bottomRow": 27,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -258,7 +263,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 12,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -275,7 +280,7 @@
               "text": "Saved",
               "key": "x6ja5rumv3",
               "isDeprecated": false,
-              "rightColumn": 28,
+              "rightColumn": 19,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "qbi79nhe7d",
@@ -302,8 +307,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 22,
-              "bottomRow": 26,
+              "topRow": 63,
+              "bottomRow": 67,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -312,7 +317,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 39,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -326,10 +331,10 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Attended",
+              "text": "Attended/Attending",
               "key": "x6ja5rumv3",
               "isDeprecated": false,
-              "rightColumn": 55,
+              "rightColumn": 17,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "dvlbpkh38a",
@@ -368,7 +373,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 47,
+              "leftColumn": 50,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -388,7 +393,7 @@
               "text": "{{ appsmith.URL.queryParams.user_id }}",
               "key": "1dkd3fjnq8",
               "isDeprecated": false,
-              "rightColumn": 63,
+              "rightColumn": 64,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "bppwazmddd",
@@ -420,8 +425,335 @@
               "animateLoading": true,
               "dynamicBindingPathList": [
                 {
-                  "key": "tableData"
+                  "key": "accentColor"
                 },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "primaryColumns.concert_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.has_happened.computedValue"
+                },
+                {
+                  "key": "primaryColumns.link_to_tickets.computedValue"
+                },
+                {
+                  "key": "primaryColumns.show_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.sold_out.computedValue"
+                },
+                {
+                  "key": "primaryColumns.ticket_price.computedValue"
+                },
+                {
+                  "key": "primaryColumns.venue_id.computedValue"
+                },
+                {
+                  "key": "tableData"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 3,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1681668922724,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "user_saved_table",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "concert_id",
+                "has_happened",
+                "link_to_tickets",
+                "show_date",
+                "sold_out",
+                "ticket_price",
+                "venue_id"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 60,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 70,
+                "status": 85
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "concert_id": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "concert_id",
+                  "id": "concert_id",
+                  "alias": "concert_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "concert_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{user_saved_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"concert_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "has_happened": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "has_happened",
+                  "id": "has_happened",
+                  "alias": "has_happened",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "has_happened",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{user_saved_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"has_happened\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "link_to_tickets": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "link_to_tickets",
+                  "id": "link_to_tickets",
+                  "alias": "link_to_tickets",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "link_to_tickets",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{user_saved_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"link_to_tickets\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "show_date": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "show_date",
+                  "id": "show_date",
+                  "alias": "show_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "show_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{user_saved_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"show_date\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "sold_out": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "sold_out",
+                  "id": "sold_out",
+                  "alias": "sold_out",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "sold_out",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{user_saved_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sold_out\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "ticket_price": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "ticket_price",
+                  "id": "ticket_price",
+                  "alias": "ticket_price",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "ticket_price",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{user_saved_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ticket_price\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "venue_id": {
+                  "allowCellWrapping": false,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "venue_id",
+                  "id": "venue_id",
+                  "alias": "venue_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "venue_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{user_saved_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"venue_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "s63q0siky8",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "lo0ekaqy8e",
+              "minWidth": 450,
+              "tableData": "{{saved_concerts.data}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 68,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
                 },
@@ -430,6 +762,9 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
                 },
                 {
                   "key": "primaryColumns.concert_id.computedValue"
@@ -488,11 +823,11 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681668922724,
+              "columnUpdatedAt": 1681671062779,
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "Table1",
+              "widgetName": "user_attends_table",
               "defaultPageSize": 0,
               "columnOrder": [
                 "concert_id",
@@ -503,9 +838,13 @@
                 "ticket_price",
                 "venue_id"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tableData"
+                }
+              ],
               "displayName": "Table",
-              "bottomRow": 60,
+              "bottomRow": 99,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -513,6 +852,7 @@
               },
               "parentRowSpace": 10,
               "hideCard": false,
+              "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
@@ -540,7 +880,7 @@
                   "label": "concert_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"concert_id\"]))}}",
+                  "computedValue": "{{user_attends_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"concert_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -569,7 +909,7 @@
                   "label": "has_happened",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"has_happened\"]))}}",
+                  "computedValue": "{{user_attends_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"has_happened\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -598,7 +938,7 @@
                   "label": "link_to_tickets",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"link_to_tickets\"]))}}",
+                  "computedValue": "{{user_attends_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"link_to_tickets\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -627,7 +967,7 @@
                   "label": "show_date",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"show_date\"]))}}",
+                  "computedValue": "{{user_attends_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"show_date\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -656,7 +996,7 @@
                   "label": "sold_out",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sold_out\"]))}}",
+                  "computedValue": "{{user_attends_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sold_out\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -685,7 +1025,7 @@
                   "label": "ticket_price",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ticket_price\"]))}}",
+                  "computedValue": "{{user_attends_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ticket_price\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -714,20 +1054,20 @@
                   "label": "venue_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"venue_id\"]))}}",
+                  "computedValue": "{{user_attends_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"venue_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 }
               },
-              "key": "s63q0siky8",
+              "key": "q8jcgt3xgg",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 28,
+              "rightColumn": 63,
               "textSize": "0.875rem",
-              "widgetId": "lo0ekaqy8e",
+              "widgetId": "y04yridvm5",
               "minWidth": 450,
-              "tableData": "{{saved_concerts.data}}",
+              "tableData": "{{attended_concerts.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -742,6 +1082,16 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "UserHome_attended_concerts",
+              "name": "attended_concerts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.user_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "UserHome_saved_concerts",
               "name": "saved_concerts",
