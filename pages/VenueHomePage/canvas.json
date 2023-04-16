@@ -190,6 +190,15 @@
                 },
                 {
                   "key": "primaryColumns.customColumn1.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.boxShadow"
                 }
               ],
               "needsHeightForContent": true,
@@ -227,7 +236,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681681289395,
+              "columnUpdatedAt": 1681682829645,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -242,7 +251,8 @@
                 "Buy_Tickets",
                 "ID",
                 "customColumn1",
-                "Sold_Out_"
+                "Sold_Out_",
+                "customColumn2"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -529,6 +539,39 @@
                   "customAlias": "",
                   "buttonLabel": "Toggle Sold Out",
                   "onClick": "{{toggleSoldOut.run(() => GetVenueConcerts.run(), () => {})}}"
+                },
+                "customColumn2": {
+                  "allowCellWrapping": false,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "customColumn2",
+                  "id": "customColumn2",
+                  "alias": "Delete Concert",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Delete Concert",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "buttonColor": "{{ConcertsHosted.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{ConcertsHosted.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{ConcertsHosted.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "buttonLabel": "-"
                 }
               },
               "key": "94oe3l6j83",
