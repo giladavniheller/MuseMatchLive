@@ -183,7 +183,7 @@
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
               "hideCard": false,
-              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( lect1.options[0].label,\n              value: ))(User_select.options, User_select.serverSideFiltering) }}",
+              "defaultOptionValue": "",
               "animateLoading": true,
               "parentColumnSpace": 13.6875,
               "dynamicTriggerPathList": [],
@@ -197,9 +197,6 @@
                 },
                 {
                   "key": "options"
-                },
-                {
-                  "key": "defaultOptionValue"
                 }
               ],
               "labelPosition": "Top",
