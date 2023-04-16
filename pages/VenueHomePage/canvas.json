@@ -178,6 +178,18 @@
                 },
                 {
                   "key": "primaryColumns.Opener_s_.computedValue"
+                },
+                {
+                  "key": "primaryColumns.ID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.boxShadow"
                 }
               ],
               "needsHeightForContent": true,
@@ -215,7 +227,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681666079589,
+              "columnUpdatedAt": 1681681289395,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -226,9 +238,11 @@
                 "Headliner_s_",
                 "Opener_s_",
                 "Price",
-                "Sold_Out_",
                 "Show_Already_Happened_",
-                "Buy_Tickets"
+                "Buy_Tickets",
+                "ID",
+                "customColumn1",
+                "Sold_Out_"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -238,12 +252,16 @@
                 "step": 70,
                 "status": 192,
                 "action": 123,
-                "customColumn1": 107
+                "customColumn1": 167
               },
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 13.6875,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.customColumn1.onClick"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
                 "Buy_Tickets": {
@@ -448,6 +466,69 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
+                },
+                "ID": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "ID",
+                  "id": "ID",
+                  "alias": "ID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "ID",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{ConcertsHosted.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ID\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "customColumn1": {
+                  "allowCellWrapping": false,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "customColumn1",
+                  "id": "customColumn1",
+                  "alias": "Mark Sold Out",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Mark Sold Out",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "buttonColor": "{{ConcertsHosted.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{ConcertsHosted.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{ConcertsHosted.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "buttonLabel": "Toggle Sold Out",
+                  "onClick": "{{toggleSoldOut.run(() => GetVenueConcerts.run(), () => {})}}"
                 }
               },
               "key": "94oe3l6j83",

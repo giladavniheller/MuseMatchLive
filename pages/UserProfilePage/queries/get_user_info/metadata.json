@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GetVenueConcerts",
+    "name": "get_user_info",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/v/venueHome"
+        "url": "web:4000/u/users/info"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "VenueHomePage",
+    "pageId": "UserProfilePage",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -25,8 +25,8 @@
       "encodeParamsToggle": true,
       "queryParameters": [
         {
-          "key": "venue_id",
-          "value": "{{ appsmith.URL.queryParams.venue_id }}"
+          "key": "user_id",
+          "value": "{{appsmith.URL.queryParams.user_id}}"
         }
       ],
       "bodyFormData": [],
@@ -51,14 +51,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      " appsmith.URL.queryParams.venue_id "
+      "appsmith.URL.queryParams.user_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "VenueHomePage_GetVenueConcerts",
+  "id": "UserProfilePage_get_user_info",
   "deleted": false,
-  "gitSyncId": "642d7dd512a9b40910aa1c8f_643c21cc6999744b0bdea4cf"
+  "gitSyncId": "643808725c99fa448ba114c0_643c6cb23eada20e6d053bb0"
 }
