@@ -85,7 +85,13 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1Copy1",
+              "onClick": "{{navigateTo('VenueHomePage', {'venue_id': Venue_select.selectedOptionValue}, 'SAME_WINDOW')}}",
               "buttonColor": "#facc15",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -99,7 +105,11 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "leftColumn": 23,
               "dynamicBindingPathList": [
                 {
@@ -239,18 +249,18 @@
               "isFilterable": true,
               "displayName": "Select",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-              "labelText": "Choose Venue ID\n",
+              "labelText": "Choose Venue\n",
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 1,
-              "bottomRow": 8,
+              "topRow": 2,
+              "bottomRow": 9,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
               "hideCard": false,
-              "defaultOptionValue": "GREEN",
+              "defaultOptionValue": "",
               "animateLoading": true,
               "parentColumnSpace": 13.6875,
               "dynamicTriggerPathList": [],
@@ -261,23 +271,13 @@
                 },
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "options"
                 }
               ],
               "labelPosition": "Top",
-              "options": [
-                {
-                  "label": "Blue",
-                  "value": "BLUE"
-                },
-                {
-                  "label": "Green",
-                  "value": "GREEN"
-                },
-                {
-                  "label": "Red",
-                  "value": "RED"
-                }
-              ],
+              "options": "{{get_venues.data.map( (obj) =>{ return  {'label': obj.venue_name, 'value': obj.venue_id } })}}",
               "placeholderText": "Select option",
               "isDisabled": false,
               "key": "8ynrwmz4gq",
@@ -310,14 +310,14 @@
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 1,
-              "bottomRow": 8,
+              "topRow": 2,
+              "bottomRow": 9,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
               "serverSideFiltering": false,
               "hideCard": false,
-              "defaultOptionValue": "GREEN",
+              "defaultOptionValue": "",
               "animateLoading": true,
               "parentColumnSpace": 13.6875,
               "dynamicTriggerPathList": [],
@@ -331,20 +331,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "options": [
-                {
-                  "label": "Blue",
-                  "value": "BLUE"
-                },
-                {
-                  "label": "Green",
-                  "value": "GREEN"
-                },
-                {
-                  "label": "Red",
-                  "value": "RED"
-                }
-              ],
+              "options": "",
               "placeholderText": "Select option",
               "isDisabled": false,
               "key": "8ynrwmz4gq",
@@ -407,6 +394,14 @@
             {
               "id": "Homepage_Get_Users",
               "name": "Get_Users",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Homepage_get_venues",
+              "name": "get_venues",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
