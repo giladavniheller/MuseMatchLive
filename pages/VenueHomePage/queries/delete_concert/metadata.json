@@ -30,7 +30,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\"concert_id\" : \"{{ConcertsHosted.selectedRow.ID}}\"\"\n}",
+      "body": "{\n\"concert_id\" : \"{{ConcertsHosted.selectedRow.ID}}\"\n}",
       "bodyFormData": [],
       "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
