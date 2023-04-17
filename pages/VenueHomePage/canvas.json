@@ -330,6 +330,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "primaryColumns.customColumn1.onClick"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.onClick"
                 }
               ],
               "borderWidth": "1",
@@ -631,7 +634,8 @@
                   "borderRadius": "{{ConcertsHosted.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{ConcertsHosted.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
-                  "buttonLabel": "-"
+                  "buttonLabel": "-",
+                  "onClick": "{{delete_concert.run(() => GetVenueConcerts.run(), () => {})}}"
                 }
               },
               "key": "94oe3l6j83",
