@@ -420,7 +420,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 12.5625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 23,
+              "leftColumn": 17,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -437,7 +437,7 @@
               "text": "MuseMatch Live",
               "key": "fss2e3beqv",
               "isDeprecated": false,
-              "rightColumn": 56,
+              "rightColumn": 50,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "52rsl63w3y",
