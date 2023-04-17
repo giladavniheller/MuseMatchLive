@@ -29,6 +29,7 @@
           "value": "{{appsmith.URL.queryParams.user_id}}"
         }
       ],
+      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
