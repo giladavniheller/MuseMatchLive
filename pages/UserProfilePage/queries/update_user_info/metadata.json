@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "delete_concert",
+    "name": "update_user_info",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/delete_concert"
+        "url": "web:4000/u/update_profile"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "VenueHomePage",
+    "pageId": "UserProfilePage",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -28,10 +28,15 @@
         }
       ],
       "encodeParamsToggle": true,
-      "queryParameters": [],
-      "body": "{\n\"concert_id\" : \"{{ConcertsHosted.selectedRow.ID}}\"\"\n}",
+      "queryParameters": [
+        {
+          "key": "user_id",
+          "value": "{{appsmith.URL.queryParams.user_id}}"
+        }
+      ],
+      "body": "{{EditUser_form.data}}",
       "bodyFormData": [],
-      "httpMethod": "DELETE",
+      "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -45,6 +50,9 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
+        "key": "queryParameters[0].value"
+      },
+      {
         "key": "body"
       }
     ],
@@ -52,14 +60,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "ConcertsHosted.selectedRow.ID"
+      "EditUser_form.data",
+      "appsmith.URL.queryParams.user_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "VenueHomePage_delete_concert",
+  "id": "UserProfilePage_update_user_info",
   "deleted": false,
-  "gitSyncId": "643808725c99fa448ba114c0_643c71a43eada20e6d053bb6"
+  "gitSyncId": "643808725c99fa448ba114c0_643ca8fba88456054d938fb5"
 }

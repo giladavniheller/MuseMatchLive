@@ -1,0 +1,3 @@
+{
+"concert_id" : "{{ConcertsHosted.selectedRow.ID}}""
+}
