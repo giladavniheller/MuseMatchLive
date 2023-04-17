@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 550,
+          "bottomRow": 560,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -43,8 +43,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 9,
-              "bottomRow": 15,
+              "topRow": 14,
+              "bottomRow": 20,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -76,8 +76,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "hug",
+              "originalTopRow": 13,
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 19,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -98,8 +100,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 9,
-              "bottomRow": 15,
+              "topRow": 14,
+              "bottomRow": 20,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -131,8 +133,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "hug",
+              "originalTopRow": 14,
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 20,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -148,8 +152,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 9,
-              "bottomRow": 15,
+              "topRow": 14,
+              "bottomRow": 20,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -181,8 +185,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "hug",
+              "originalTopRow": 14,
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 20,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -196,8 +202,8 @@
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 2,
-              "bottomRow": 8,
+              "topRow": 7,
+              "bottomRow": 13,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
@@ -239,8 +245,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 7,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 13,
               "minDynamicHeight": 4
             },
             {
@@ -253,8 +261,8 @@
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 2,
-              "bottomRow": 9,
+              "topRow": 7,
+              "bottomRow": 14,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
@@ -296,8 +304,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 7,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 14,
               "minDynamicHeight": 4
             },
             {
@@ -310,8 +320,8 @@
               "searchTags": [
                 "dropdown"
               ],
-              "topRow": 2,
-              "bottomRow": 9,
+              "topRow": 7,
+              "bottomRow": 14,
               "parentRowSpace": 10,
               "labelWidth": 5,
               "type": "SELECT_WIDGET",
@@ -350,8 +360,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 7,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 14,
               "minDynamicHeight": 4
             },
             {
@@ -359,8 +371,8 @@
               "widgetName": "MuseMatch_image",
               "displayName": "Image",
               "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
-              "topRow": 19,
-              "bottomRow": 55,
+              "topRow": 20,
+              "bottomRow": 56,
               "parentRowSpace": 10,
               "type": "IMAGE_WIDGET",
               "hideCard": false,
@@ -372,7 +384,7 @@
               "dynamicBindingPathList": [],
               "defaultImage": "https://assets.appsmith.com/widgets/default.png",
               "key": "fo89999fx5",
-              "image": "",
+              "image": "https://c0.wallpaperflare.com/preview/285/1009/176/concery-wallpaper-festival-party.jpg",
               "isDeprecated": false,
               "rightColumn": 64,
               "objectFit": "cover",
@@ -384,8 +396,66 @@
               "isLoading": false,
               "maxZoomLevel": 1,
               "enableDownload": false,
+              "originalTopRow": 20,
               "borderRadius": "0.375rem",
+              "originalBottomRow": 56,
               "enableRotation": false
+            },
+            {
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 0,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 17,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "MuseMatch Live",
+              "key": "fss2e3beqv",
+              "isDeprecated": false,
+              "rightColumn": 50,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "52rsl63w3y",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#7f1d1d",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 0,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 7,
+              "fontSize": "3rem",
+              "minDynamicHeight": 4
             }
           ]
         },
