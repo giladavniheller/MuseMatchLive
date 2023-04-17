@@ -436,6 +436,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "primaryColumns.customColumn1.onClick"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.onClick"
                 }
               ],
               "borderWidth": "1",
@@ -1114,7 +1117,8 @@
                   "borderRadius": "{{all_concerts_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{all_concerts_table.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
-                  "buttonLabel": "+"
+                  "buttonLabel": "+",
+                  "onClick": "{{add_to_attends.run()}}"
                 }
               },
               "key": "q8jcgt3xgg",

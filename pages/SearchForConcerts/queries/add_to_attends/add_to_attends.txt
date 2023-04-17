@@ -1,0 +1,3 @@
+{
+"concert_id" : {{all_concerts_table.triggeredRow.concert_id}}
+}
