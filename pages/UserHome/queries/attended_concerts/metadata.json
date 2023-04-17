@@ -7,6 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
+        "sshProxyEnabled": false,
         "url": "web:4000/u/attended_concerts"
       },
       "invalids": [],
@@ -29,6 +30,7 @@
           "value": "{{appsmith.URL.queryParams.user_id}}"
         }
       ],
+      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
