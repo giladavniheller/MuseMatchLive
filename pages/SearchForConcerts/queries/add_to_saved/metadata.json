@@ -34,7 +34,7 @@
           "value": "{{appsmith.URL.queryParams.user_id}}"
         }
       ],
-      "body": "{\n\"concert_id\" : \"{{all_concerts_table.triggeredRow.concert_id}}\"\"\n}",
+      "body": "{\n\"concert_id\" : {{all_concerts_table.triggeredRow.concert_id}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
