@@ -39,6 +39,10 @@
     {
       "id": "VenueHomePage",
       "isDefault": false
+    },
+    {
+      "id": "VenueProfilePage",
+      "isDefault": false
     }
   ],
   "viewMode": false,

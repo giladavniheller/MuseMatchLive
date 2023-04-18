@@ -144,7 +144,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1Copy",
-              "onClick": "{{navigateTo('', {}, 'SAME_WINDOW')}}",
+              "onClick": "",
               "buttonColor": "#f87171",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
