@@ -5,23 +5,7 @@
       "isDefault": true
     },
     {
-      "id": "CreateUserProfile",
-      "isDefault": false
-    },
-    {
-      "id": "CreateArtistProfile",
-      "isDefault": false
-    },
-    {
-      "id": "CreateVenueProfile",
-      "isDefault": false
-    },
-    {
       "id": "SearchForConcerts",
-      "isDefault": false
-    },
-    {
-      "id": "SearchForVenue",
       "isDefault": false
     },
     {
